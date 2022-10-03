@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Franko IT Day</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <a href="#Home" class="header__link sliding-hover">Home</a>
+            <a href="#AboutUs" class="header__link sliding-hover">About us</a>
+            <a href="#Speakers" class="header__link sliding-hover">Speakers</a>
+            <a id="schedule-link" href="#Schedule-pc" class="header__link sliding-hover">Schedule</a>
+            <a href="#Partners" class="header__link sliding-hover">Partners</a>
+            <a href="#LiveStream" class="header__link sliding-hover">Live stream</a>
+        </header>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu">
+            <div class="menu__container">
+                <a href="#Home" class="menu__link">Home</a>
+                <a href="#AboutUs" class="menu__link">About us</a>
+                <a href="#Speakers" class="menu__link">Speakers</a>
+                <a href="#Schedule" class="menu__link">Schedule</a>
+                <a href="#Partners" class="menu__link">Partners</a>
+                <a href="#LiveStream" class="menu__link">Live stream</a>
+            </div>
+        </div>
+        <section id="Home" class="home">
+            <div class="home__title home-title">
+                <img class="home-title__lines" src="./img/decor/lines.svg" alt="">
+                <img class="home-title__dots" src="./img/decor/dots.svg" alt="">
+                <h1 class="home-title__text">
+                    FRANKO
+                    <span>IT DAY</span>
+                </h1>
+            </div>
+            <div class="home__main home-main">
+                <img class="home-main__dots" src="./img/decor/dots.svg" alt="">
+                <img src="./img/decor/triangles.png" alt="" class="home-main__triangles">
+                <img src="./img/decor/lines.svg" alt="" class="home-main__lines">
+                <div class="home__registration home-registration">
+                    <p class="home-registration__date">20.10.20<span>22</span></p>
+                    <p class="home-registration__title"><a href="https://goo.gl/maps/9nSk46kWySefiC4e7">offline</a> & live stream</p>
+                    <a href="https://goo.gl/maps/9nSk46kWySefiC4e7"><p class="home-registration__title">
+                        <img style="width: 15px" src="./img/home/location.png" alt="">
+                        lviv, drahomanova 50</p></a>
+                    <div class="home-registration__button">
+                        <a href="https://forms.gle/3EQLYPq7VMK4t9jL9" class="home-registration__link button">
+                            Registration
+                        </a>
+                    </div>
+                    <p class="home-registration__text">
+                        Broaden your outlook, deepen your <br> knowledge. Learn, create, <br> design, join Franko IT Day!
+                    </p>
+                </div>
+                <img src="./img/home/franko.png" alt="Іван Франко" class="home__image">
+            </div>
+        </section>
+        <section id="AboutUs" class="about">
+            <div class="container about__container">
+                <h2 data-aos="fade-right" class="about__title title colored-dot">ABOUT US</h2>
+                <p data-aos="fade-right" class="about__text">
+                    Franko IT Day is the biggest IT conference of the Ivan Franko National University of Lviv. The attendees will hear fascinating lectures from experts in electronics, programming and design, and will get a chance to master practical skills during exclusive workshops.
+                </p>
+                <div class="about__main">
+                    <img loading="lazy" data-aos="slide-up" class="about__img" src="./img/about/01.jpg" alt="Franko IT Day">
+                    <img loading="lazy" data-aos="slide-up" class="about__img" src="./img/about/02.jpg" alt="Franko IT Day">
+                    <img loading="lazy" data-aos="slide-up" class="about__img" src="./img/about/03.jpg" alt="Franko IT Day">
+                    <img loading="lazy" data-aos="slide-up" class="about__img" src="./img/about/04.jpg" alt="Franko IT Day">
+                    <img loading="lazy" data-aos="slide-up" class="about__img" src="./img/about/05.jpg" alt="Franko IT Day">
+                    <img loading="lazy" data-aos="slide-up" class="about__img" src="./img/about/06.jpg" alt="Franko IT Day">
+                    <img loading="lazy" data-aos="fade-left" src="./img/decor/dots-black.png" class="about__dots-1" alt="">
+                </div>
+                <img data-aos="fade-right" src="./img/decor/dots-black.png" class="about__dots-2" alt="">
+            </div>
+        </section>
+        <section id="Speakers" class="speakers">
+            <div style="display: none; opacity: 0" id="Popup" class="popup"></div>
+            <div class="container">
+                <h2 data-aos="fade-right" class="speakers__title title colored-dot">SPEAKERS</h2>
+                <div class="speakers__main">
+                    <img data-aos="fade-left" src="./img/decor/dots-black.png" alt="" class="speakers__dots-1">
+                    <img data-aos="fade-left" src="./img/decor/dots-black.png" alt="" class="speakers__dots-2">
+                    <div data-description="???" data-aos="slide-up" class="speaker">
+                        <img src="./img/speakers/preview.svg" alt="" class="speaker__img speaker__hover">
+                        <p class="speaker__name">Secret Name</p>
+                        <p class="speaker__post">Unkn?wn inform*tion...</p>
+                        <p class="speaker__company">**************</p>
+                    </div>
+                    <div data-description="???" data-aos="slide-up" class="speaker">
+                        <img src="./img/speakers/preview.svg" alt="" class="speaker__img speaker__hover">
+                        <p class="speaker__name">Secret Name</p>
+                        <p class="speaker__post">Unkn?wn inform*tion...</p>
+                        <p class="speaker__company">**************</p>
+                    </div>
+                    <div data-description="???" data-aos="slide-up" class="speaker">
+                        <img src="./img/speakers/preview.svg" alt="" class="speaker__img speaker__hover">
+                        <p class="speaker__name">Secret Name</p>
+                        <p class="speaker__post">Unkn?wn inform*tion...</p>
+                        <p class="speaker__company">**************</p>
+                    </div>
+                    <div data-description="???" data-aos="slide-up" class="speaker">
+                        <img src="./img/speakers/preview.svg" alt="" class="speaker__img speaker__hover">
+                        <p class="speaker__name">Secret Name</p>
+                        <p class="speaker__post">Unkn?wn inform*tion...</p>
+                        <p class="speaker__company">**************</p>
+                    </div>
+                    <div data-description="???" data-aos="slide-up" class="speaker">
+                        <img src="./img/speakers/preview.svg" alt="" class="speaker__img speaker__hover">
+                        <p class="speaker__name">Secret Name</p>
+                        <p class="speaker__post">Unkn?wn inform*tion...</p>
+                        <p class="speaker__company">**************</p>
+                    </div>
+                    <div data-description="???" data-aos="slide-up" class="speaker">
+                        <img src="./img/speakers/preview.svg" alt="" class="speaker__img speaker__hover">
+                        <p class="speaker__name">Secret Name</p>
+                        <p class="speaker__post">Unkn?wn inform*tion...</p>
+                        <p class="speaker__company">**************</p>
+                    </div>
+                    <div data-description="???" data-aos="slide-up" class="speaker">
+                        <img src="./img/speakers/preview.svg" alt="" class="speaker__img speaker__hover">
+                        <p class="speaker__name">Secret Name</p>
+                        <p class="speaker__post">Unkn?wn inform*tion...</p>
+                        <p class="speaker__company">**************</p>
+                    </div>
+                    <div data-description="???" data-aos="slide-up" class="speaker">
+                        <img src="./img/speakers/preview.svg" alt="" class="speaker__img speaker__hover">
+                        <p class="speaker__name">Secret Name</p>
+                        <p class="speaker__post">Unkn?wn inform*tion...</p>
+                        <p class="speaker__company">**************</p>
+                    </div>
+                    <div data-description="???" data-aos="slide-up" class="speaker">
+                        <img src="./img/speakers/preview.svg" alt="" class="speaker__img speaker__hover">
+                        <p class="speaker__name">Secret Name</p>
+                        <p class="speaker__post">Unkn?wn inform*tion...</p>
+                        <p class="speaker__company">**************</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div data-description="???" class="speaker swiper-slide">
+                        <img src="./img/speakers/preview.svg" alt="" class="speaker__img speaker__hover">
+                        <p class="speaker__name">Secret Name</p>
+                        <p class="speaker__post">Unkn?wn inform*tion...</p>
+                        <p class="speaker__company">**************</p>
+                    </div>
+                    <div data-description="???" class="speaker swiper-slide">
+                        <img src="./img/speakers/preview.svg" alt="" class="speaker__img speaker__hover">
+                        <p class="speaker__name">Secret Name</p>
+                        <p class="speaker__post">Unkn?wn inform*tion...</p>
+                        <p class="speaker__company">**************</p>
+                    </div>
+                    <div data-description="???" class="speaker swiper-slide">
+                        <img src="./img/speakers/preview.svg" alt="" class="speaker__img speaker__hover">
+                        <p class="speaker__name">Secret Name</p>
+                        <p class="speaker__post">Unkn?wn inform*tion...</p>
+                        <p class="speaker__company">**************</p>
+                    </div>
+                    <div data-description="???" class="speaker swiper-slide">
+                        <img src="./img/speakers/preview.svg" alt="" class="speaker__img speaker__hover">
+                        <p class="speaker__name">Secret Name</p>
+                        <p class="speaker__post">Unkn?wn inform*tion...</p>
+                        <p class="speaker__company">**************</p>
+                    </div>
+                    <div data-description="???" class="speaker swiper-slide">
+                        <img src="./img/speakers/preview.svg" alt="" class="speaker__img speaker__hover">
+                        <p class="speaker__name">Secret Name</p>
+                        <p class="speaker__post">Unkn?wn inform*tion...</p>
+                        <p class="speaker__company">**************</p>
+                    </div>
+                    <div data-description="???" class="speaker swiper-slide">
+                        <img src="./img/speakers/preview.svg" alt="" class="speaker__img speaker__hover">
+                        <p class="speaker__name">Secret Name</p>
+                        <p class="speaker__post">Unkn?wn inform*tion...</p>
+                        <p class="speaker__company">**************</p>
+                    </div>
+                    <div data-description="???" class="speaker swiper-slide">
+                        <img src="./img/speakers/preview.svg" alt="" class="speaker__img speaker__hover">
+                        <p class="speaker__name">Secret Name</p>
+                        <p class="speaker__post">Unkn?wn inform*tion...</p>
+                        <p class="speaker__company">**************</p>
+                    </div>
+                    <div data-description="???" class="speaker swiper-slide">
+                        <img src="./img/speakers/preview.svg" alt="" class="speaker__img speaker__hover">
+                        <p class="speaker__name">Secret Name</p>
+                        <p class="speaker__post">Unkn?wn inform*tion...</p>
+                        <p class="speaker__company">**************</p>
+                    </div>
+                    <div data-description="???" class="speaker swiper-slide">
+                        <img src="./img/speakers/preview.svg" alt="" class="speaker__img speaker__hover">
+                        <p class="speaker__name">Secret Name</p>
+                        <p class="speaker__post">Unkn?wn inform*tion...</p>
+                        <p class="speaker__company">**************</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section id="Schedule-mobile" class="schedule schedule-mobile">
+            <div class="container">
+                <h2 data-aos="fade-right" class="colored-dot schedule__title title">SCHEDULE</h2>
+                <div class="schedule__main">
+                    <div data-aos="zoom-out-up" class="schedule__box">
+                        <div class="schedule__navigation schedule-navigation">
+                            <div data-schedule-navigation="1" class="schedule-navigation__item active">
+                                GROUP 1
+                            </div>
+                            <div data-schedule-navigation="2" class="sliding-hover schedule-navigation__item">
+                                GROUP 2
+                            </div>
+                        </div>
+                        <div data-schedule-lectures="1" class="schedule__lectures schedule-lectures">
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        10:00
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        10:30
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        10:30
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        11:30
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        11:30
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        12:30
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        12:30
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        13:00
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        13:00
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        14:00
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        14:00
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        15:00
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        15:00
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        16:00
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: none" data-schedule-lectures="2" class="schedule__lectures schedule-lectures">
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        10:00
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        10:30
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        10:30
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        11:30
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        11:30
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        12:30
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        12:30
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        13:00
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        13:00
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        14:00
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        14:00
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        15:00
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Schedule-pc" class="schedule schedule-pc">
+            <div class="container">
+                <h2 data-aos="fade-right" class="colored-dot schedule__title title">SCHEDULE</h2>
+                <div class="schedule__main schedule__main-pc">
+                    <div data-aos="zoom-out-up" class="schedule__box">
+                        <div class="schedule-navigation__item schedule-navigation__item-pc">
+                            GROUP 1
+                        </div>
+                        <div class="schedule__lectures schedule-lectures">
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        10:00
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        10:30
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        10:30
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        11:30
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        11:30
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        12:30
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        12:30
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        13:00
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        13:00
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        14:00
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        14:00
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        15:00
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        15:00
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        16:00
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="schedule__triangles-1" src="./img/decor/triangles.png" alt="">
+                    </div>
+                    <div data-aos="zoom-out-up" class="schedule__box">
+                        <div class="schedule-navigation__item schedule-navigation__item-pc">
+                            GROUP 2
+                        </div>
+                        <div class="schedule__lectures schedule-lectures">
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        10:00
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        10:30
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        10:30
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        11:30
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        11:30
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        12:30
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        12:30
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        13:00
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        13:00
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        14:00
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="schedule-lectures__item lecture">
+                                <div class="lecture__time lecture-time">
+                                    <p class="lecture-time__item">
+                                        14:00
+                                    </p>
+                                    <p class="lecture-time__item">
+                                        15:00
+                                    </p>
+                                </div>
+                                <div class="lecture__info lecture-info">
+                                    <p class="lecture-info__name">
+                                        Secret Topic
+                                    </p>
+                                    <p class="lecture-info__speaker">
+                                        Secret Speaker
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="schedule__triangles-2" src="./img/decor/triangles.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Partners" class="partners">
+            <div class="container">
+                <h2 data-aos="fade-right" class="partners__title title colored-dot">PARTNERS</h2>
+                <div class="partners__main">
+                    <img loading="lazy" style="width: 300px; height: 130px" data-aos="flip-up" src="./img/partners/01.png" alt="" class="partners__img">
+                    <img loading="lazy" style="width: 300px; height: 130px" data-aos="flip-up" src="./img/partners/02.svg" alt="" class="partners__img">
+                    <img loading="lazy" style="width: 300px; height: 130px" data-aos="flip-up" src="./img/partners/03.svg" alt="" class="partners__img">
+                    <img loading="lazy" style="width: 300px; height: 130px" data-aos="flip-up" src="./img/partners/04.svg" alt="" class="partners__img">
+                    <img loading="lazy" style="width: 300px; height: 130px" data-aos="flip-up" src="./img/partners/05.svg" alt="" class="partners__img">
+                </div>
+            </div>
+            <img data-aos="fade-right" src="./img/decor/lines.svg" alt="" class="partners__lines">
+        </section>
+        <section id="LiveStream" class="stream">
+            <div class="container">
+                <h2 data-aos="fade-right" class="stream__title title colored-dot">WATCH US LIVE</h2>
+                <div class="stream__main">
+                    <div data-aos="flip-up" id="video" class="stream__video"></div>
+                    <div data-aos="zoom-in" class="stream__text">
+                        Join Franko IT Day online & in person to learn, practice, break the limits, create the future with <span>us!</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <a href="https://www.facebook.com/electronics.lnu" class="footer__link">
+                <img src="./img/footer/fb.png" alt="" class="footer__icon">
+            </a>
+            <a href="https://instagram.com/electronics_lnu" class="footer__link">
+                <img src="./img/footer/inst.png" alt="" class="footer__icon">
+            </a>
+            <a href="https://t.me/electronics_lnu" class="footer__link">
+                <img src="./img/footer/tg.png" alt="" class="footer__icon">
+            </a>
+            <img src="./img/decor/lines.svg" alt="" class="footer__lines">
+            <img src="./img/decor/dots-black.png" alt="" class="footer__dots">
+            <img src="./img/decor/triangles.png" alt="" class="footer__triangles">
+        </footer>
+    </div>
+<!--    <script src="https://www.youtube.com/iframe_api"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
