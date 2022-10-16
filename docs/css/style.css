@@ -692,6 +692,7 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.3s linear;
   background-color: #fb7911;
   width: 150px;
+  border: 6px solid #fb7911;
   border-radius: 50%;
 }
 
@@ -800,6 +801,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   position: relative;
   flex-direction: column;
+  align-items: center;
   gap: 35px;
 }
 
@@ -828,12 +830,13 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  align-items: center;
   transition: all 0.3s ease-in-out;
   animation-duration: 0.3s;
   animation-timing-function: linear;
   animation-name: fade;
   animation-iteration-count: 1;
+  min-height: 600px;
+  max-width: 450px;
 }
 
 @keyframes fade {
