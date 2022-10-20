@@ -85,14 +85,19 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     function onYouTubeIframeAPIReady() {
-        const player = new YT.Player('video', {
+        const player1 = new YT.Player('video1', {
             height: '360',
             width: '640',
-            videoId: youtubeParser('https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley')
+            videoId: youtubeParser('https://www.youtube.com/watch?v=64zuCXUlrxU&ab_channel=%D0%A4%D0%B0%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D0%B5%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D1%96%D0%BA%D0%B8%D1%82%D0%B0%D0%BA%D0%BE%D0%BC%D0%BF%27%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D0%B8%D1%85%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D0%B9')
+        });
+        const player2 = new YT.Player('video2', {
+            height: '360',
+            width: '640',
+            videoId: youtubeParser('https://www.youtube.com/watch?v=8L0NXSBM4UE&ab_channel=%D0%A4%D0%B0%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D0%B5%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D1%96%D0%BA%D0%B8%D1%82%D0%B0%D0%BA%D0%BE%D0%BC%D0%BF%27%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D0%B8%D1%85%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D0%B9')
         });
     }
 
-    //onYouTubeIframeAPIReady();
+    onYouTubeIframeAPIReady();
 
     AOS.init({
         duration : 700
